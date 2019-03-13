@@ -1,6 +1,9 @@
 package com.biz.tv;
 
 public class SamsungTV implements TV {
+	public SamsungTV() {
+		System.out.println("SamsungTV °´Ã¼ »ý¼º");
+	}
 
 	@Override
 	public void powerOn() {
