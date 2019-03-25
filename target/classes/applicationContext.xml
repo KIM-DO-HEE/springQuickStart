@@ -4,8 +4,8 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="tv" class="com.biz.tv.SamsungTV">
-		<constructor-arg ref="apple"></constructor-arg>
-		<constructor-arg value="27000"></constructor-arg>
+		<property name="speaker" ref="sony"></property>
+		<property name="price" value="2700000"></property>
 	 </bean>
 	 
 	 <bean id="sony" class="com.biz.tv.SonySpeaker"></bean>

@@ -1,14 +1,28 @@
 package com.biz.tv;
 
 public class SamsungTV implements TV {
-	private AppleSpeaker speaker;
+	private Speaker speaker;
 	private int price;
-	public SamsungTV(AppleSpeaker speacker, int price) {
+	
+	
+	public SamsungTV() {
 		System.out.println("SamsungTV 객체 생성");
-		this.speaker = speacker;
-		this.price = price;
+		
 	}
 	
+	
+	public void setSpeaker(Speaker speaker) {
+		System.out.println("apple speaker 호출");
+		this.speaker = speaker;
+	}
+
+
+	public void setPrice(int price) {
+		System.out.println("price() 호출");
+		this.price = price;
+	}
+
+
 	public void initmethod() {
 		System.out.println("객체 초기화 작업 처리");
 	}
